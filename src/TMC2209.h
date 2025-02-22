@@ -9,15 +9,6 @@
 #define TMC2209_H
 #include <Arduino.h>
 
-#if !defined(ESP32) && !defined(ARDUINO_ARCH_SAMD) && !defined(ARDUINO_ARCH_RP2040) && !defined(ARDUINO_SAM_DUE)
-#  define SOFTWARE_SERIAL_INCLUDED true
-#else
-#  define SOFTWARE_SERIAL_INCLUDED false
-#endif
-#if SOFTWARE_SERIAL_INCLUDED
-#  include <SoftwareSerial.h>
-#endif
-
 
 class TMC2209
 {
